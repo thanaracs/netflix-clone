@@ -1,0 +1,42 @@
+@media screen and (max-width: 700px) {
+    header .container{
+ 
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .botoes{
+        
+        display: flex;
+        font-size: 8px;
+        margin-right: 5px;
+    }
+
+    .descricao{
+        width: 180%;
+    }
+
+    .filme-principal{
+        font-size: 14px;
+        background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/gameofthrones.jpg');
+    
+        height: 400px;
+        background-size: cover;
+        text-align: justify;
+    
+    }
+    .titulo{
+        font-size: 16px;
+        margin-top: 160%;
+    }
+
+    /*carousel de filmes*/
+    .box-filme{
+        margin-top: 60%;
+    }
+    header .logo{
+        font-size: 30px; 
+
+    }
+}

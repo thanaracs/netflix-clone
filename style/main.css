@@ -1,0 +1,124 @@
+:root {
+    --vermelho: #e50914;
+    --preto: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* BASE */
+
+body {
+    margin-top: 0.5%;
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1.5%;
+}
+
+header .logo {
+    margin-left: 12px;
+    color: var(--vermelho);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-left: 20px;
+    margin-right: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+
+/*Filmes principal*/
+
+.filme-principal {
+    font-size: 17px;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('../img/gameofthrones.jpg');
+    height: 500px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo {
+    margin-top: 20%;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.botao {
+    background-color: rgba(255, 2550, 255);
+    color: #141414;
+    border: none;
+    border-radius: 3%;
+    padding: 12px 30px;
+    /*aumenta aborda, primeiro valor cima e baixo segundo valor lados*/
+    margin-right: 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.botoes #botaoMaisInfo {
+    background-color: rgba(5, 4, 4, 0.774);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: rgba(255, 255, 255, 0.432);
+    color: rgb(0, 0, 0);
+    transition: .2s ease all;
+}
+
+.botoes #botaoMaisInfo:hover {
+    background-color: rgba(0, 0, 0, 0.466);
+    color: rgb(255, 255, 255);
+    transition: .2s ease all;
+}
+
+.container {
+    margin-left: 60px;
+}
+
+.filme-principal .container {
+    width: 40%;
+}
+
+
+/*Carousel de filmes populares*/
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+
+/* ACRESCENTANDO */

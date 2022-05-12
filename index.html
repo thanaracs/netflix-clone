@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+
+    <!-- Owl css-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+    
+    <!--RESPONSIVEL-->
+    <link rel="stylesheet" href="style/responsive.css">
+
+
+    <title>Netflix Clone</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2 class="logo">NETFLIX</h2>
+            <nav>
+                <a href="#">Início</a>
+                <a href="#">Séries</a>
+                <a href="#">Filmes</a>
+                <a href="#">Bombando</a>
+                <a href="#">Minha lista</a>
+                <a href="#">Navegar por idiomas</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="filme-principal">
+            <div class="container">
+                <h3 class="titulo">GAME OF THRONES</h3>
+                <p class="descricao">Em uma terra onde os verões podem durar vários anos e o inverno toda uma vida, sete nobres famílias lutam pelo controle da mítica terra de Westeros, dividida depois de uma guerra. Num cenário que lembra a Europa medieval, reis, rainhas, cavaleiros e renegados usam todos os meios possíveis em um jogo político pela disputa do Trono de Ferro, o símbolo do poder absoluto.</p>
+                <div class="botoes">
+                <button role="button" class="botao" onclick="botaoAssistirFilmePrincipal()">
+                    <i class="fas fa-play"></i>
+                    Assistir
+                </button>
+                <button role="button" class="botao" id="botaoMaisInfo" onclick="botaoMaisInfo()">
+                    <i class="fas fa-info-circle"></i>
+                    Mais informações
+                </button>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-filmespopulares">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img class="box-filme" src="img/thewitcher.jpg" alt="The Witcher" onclick="theWitch()">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/Dexter.jpg" alt="Dexter" onclick="dexter()">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/kimetsunoayaiba.jpg" alt="Kimetsu no yaiba" onclick="kimenoyaiba()">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/oRouxinol.jpg" alt="O rouxinol" onclick="oRouxinol()">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/comeoracaode20anos-devoltaahogwarts.jpg" alt="De volta a Hogwarts" onclick="deVoltaHogwarts()">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/omenino-dopijama-listrado.jpg" alt="O menino do pijama listrado" onclick="pijamaListrado()">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/opianista.jpg" alt="O pianista" onclick="oPianista()">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/matrix.jpg" alt="Matrix" onclick="matrix()">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/got-logo.jpg" alt="Game of Thrones" onclick="botaoAssistirFilmePrincipal()">
+                </div>
+            </div>
+
+        </div>
+
+
+    </main>
+    <script src="https://kit.fontawesome.com/7f1730d2bf.js" crossorigin="anonymous"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+
+</body>
+</html>
